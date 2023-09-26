@@ -7,27 +7,31 @@
  */
 public class whiles
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class whiles
-     */
-    public whiles()
-    {
-        // initialise instance variables
-        x = 0;
+    public void run() {
+        int i = 0;
+        do {
+            System.out.println("i is "+i+" but is less than 15");
+            i++;
+        } while (i<15);
+        int k = 10;
+        do {
+            System.out.println("k is "+k+" and is greater than 5");
+            k=k-1;
+        } while (k>5);
+        int a = 0;
+        int b = 0;
+        do {
+            System.out.println("a is "+a+" and is less than 10");
+            a++;
+        } while (a<10);
+        do {
+            System.out.println("b is "+b+" and is less than or equal to 20");
+            b++;
+        } while (b<20); 
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    public static void main(String[] args)
     {
-        // put your code here
-        return x + y;
+        whiles hw = new whiles();
+        hw.run();
     }
 }
